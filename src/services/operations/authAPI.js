@@ -103,8 +103,6 @@ export function signUp(
 
 export function login(email, password, navigate) {
   return async (dispatch) => {
-    console.log(process.env.REACT_APP_BASE_URL);
-
     const toastId = toast.loading("Loading...");
     dispatch(setLoading(true));
     try {

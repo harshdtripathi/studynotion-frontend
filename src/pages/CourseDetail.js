@@ -113,7 +113,7 @@ const CourseDetail = () => {
   ];
 
   const { user } = useSelector((state) => state.profile);
-  console.log("USER", user);
+ 
   const { token } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -353,7 +353,7 @@ const CourseDetail = () => {
         <h1 className="font-bold text-white text-4xl ">Author</h1>
         <div className="flex flex-row gap-x-6 mt-5 font-semibold text-3xl text-white hover:text-yellow-200  items-center">
           <img src={user?.image} className="w-[80px] rounded-full "></img>
-          <p>{user.firstName} {user.lastName}</p>
+          <p>{user?.firstName} {user?.lastName}</p>
 
         </div>
         <div className="text-white font-xl opacity-60 mt-8  hover:text-yellow-200">I will be your lead trainer in this course. Within no time, I will help you to understand the subject in an easy manner. I have a huge experience in online training and recording videos. Let's get started!</div>
