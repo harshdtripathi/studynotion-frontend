@@ -1,5 +1,5 @@
 // AUTH ENDPOINTS
-const BASE_URL=process.env.REACT_APP_BASE_URL
+const BASE_URL= "https://newstack-1-backend.onrender.com/api/v1"
 export const endpoints = {
     SENDOTP_API: "/auth/sendotp",
     SIGNUP_API:   BASE_URL +"/auth/signup",
